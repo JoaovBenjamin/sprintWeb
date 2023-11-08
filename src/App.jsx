@@ -1,11 +1,11 @@
-import PaginaInicial from "./Componentes/PaginaInicial"
-
+// import PaginaInicial from "./Paginas/PaginaInicial"
+import ConfirmacaoIdentidade from "./Paginas/ConfirmacaoIdentidade"
 function App() {
   
 
   return (
     <>
-     <PaginaInicial></PaginaInicial>
+      <ConfirmacaoIdentidade></ConfirmacaoIdentidade>
     </>
   )
 }
