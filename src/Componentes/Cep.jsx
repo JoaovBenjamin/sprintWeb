@@ -3,7 +3,7 @@ import { useState } from "react";
 // Importando o axios para consumir a API
 import axios from 'axios';
 //importando os esilos
-import { Section } from "../Estilos/Estilos";
+import { Section,SectionCepForm,InformacoesCep,BtnAtendimento,Paragrafo,InputUser } from "../Estilos/Estilos";
 
 function Cep() {
 
@@ -49,7 +49,31 @@ function Cep() {
     }
     return(
         <>
-            <Section></Section>
+            <Section>
+            <SectionCepForm>
+                <Paragrafo>Numero do Local:</Paragrafo>
+                <InputUser type="text" placeholder="Digite o numero do local"/>
+                <Paragrafo>Pesquisar Cep:</Paragrafo>
+                <InputUser type="text" placeholder="Digite o Cep" value={cep} onChange={handleCepChange} />
+                <BtnAtendimento onClick={pesquisaCEP}>Pesquisar Cep</BtnAtendimento>
+            </SectionCepForm>
+                {/* Retornado as informações apos pesquisar o cep */}
+                {
+                error && <p>{error}</p>
+            }
+
+            {
+                data.cep && (
+                    <InformacoesCep>
+                            <Paragrafo>CEP: {data.cep} </Paragrafo>
+                            <Paragrafo>Logradouro: {data.logradouro}</Paragrafo>
+                            <Paragrafo>Bairro: {data.bairro}</Paragrafo>
+                            <Paragrafo>UF: {data.uf}</Paragrafo>
+                            <Paragrafo>DDD: {data.ddd}</Paragrafo>
+                    </InformacoesCep>
+                )
+            }
+            </Section>
         </>
     )
 }

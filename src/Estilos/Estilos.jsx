@@ -5,6 +5,10 @@ export const   Section = styled.section`
     margin: 0;
     padding: 0;
 `
+//PAGINA HOME
+
+//HEADER HOME
+
 //seção da imagem
 export const SectionImagem = styled.section`
     display:flex ;
@@ -70,6 +74,8 @@ export const TituloImagem = styled.h1`
 
 `
 
+//BODY HOME
+
 //Section do Corpo da Home
 export const SectionCorpoHome = styled.section`
     display: flex;
@@ -108,7 +114,7 @@ export const Sectionparagrafo = styled.section`
 //Criando um contaneir que vai ser usado na tela de no minino 888px, para distanciar as colunas
 export const ContainerParagrafo = styled.div`
         padding:4.5em ;
-        margin-right: 15px;
+        
 `
 //Paragrafo que vai na home
 export const Paragrafo = styled.p`
@@ -175,26 +181,8 @@ export const LinkButton = styled.a`
     text-decoration: none;
 `
 
-//Section para o envio de dados da pagina inicial
-export const DivDadoInicial = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-    align-items: center;
-`
 
-//input para o usuario digitar seu login
-export const Input = styled.input`
-    margin-top: 100px;
-    width: 200px;
-    height: 60px;
-    padding: 7px; 
-    
-`
-
-
+// FOOTER HOME
 
 //link para criar um cadastro novo
 export const LinkC = styled.a`
@@ -213,11 +201,33 @@ export const Rodape = styled.footer`
     margin-top: 50px;
 `
 
+//PAGINA DE INICIAR O ATENDIMENTO
 
+//HEADER
 
+//Section que vai centralizar a imagem
+export const SectionImagem2 = styled.section`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+`
+//Div que vai ser o container da imagem
+export const ContainerImg = styled.div`
+    background-image: url("https://psfonttk.com/wp-content/uploads/2021/10/Molde-Numero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 80px;  
+    
+`
 
-//Section para o formulario
-export const SecaoForms = styled.section`
+//Body(Formulario)
+
+//Criando a sessão do formulario
+export const FormularioSection = styled.form`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -225,20 +235,33 @@ export const SecaoForms = styled.section`
     align-items: center;
 `
 
-//Tag de p para um texto do formulario
-export const TextoForms = styled.p`
-    color: #006666;
-    font-size: 12px;
+//Criando um input para o usurario digitar
+export const InputUser = styled.input`
+    border: 3px solid #008080;
+    width:200px;
+    height: 20px;
+    padding: 8px;
 `
 
-//Input para buscar as informações
-export const InputForms = styled.input`
+
+// PAGINA ENDEREÇO
+
+//Section para o forms do cep
+export const SectionCepForm = styled.section`
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     text-align: center;
-    width: 200px;
-    padding: 7px;
-    margin-top: 10px;
+    gap: 5px;
 `
 
+//Section para a resposta da API do VIA CEP
+
+export const InformacoesCep = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+`

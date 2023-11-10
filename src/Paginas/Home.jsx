@@ -1,5 +1,5 @@
 //Importando os componentes que vou utilizar
-import Header from "../Componentes/Header";
+import HeaderHome from "../Componentes/HeaderHome";
 import Footer from "../Componentes/Footer";
 import BodyHome from "../Componentes/BodyHome";
  
@@ -7,7 +7,7 @@ import BodyHome from "../Componentes/BodyHome";
 function Home(){
     return(
         <>
-            <Header></Header>
+            <HeaderHome></HeaderHome>
             <BodyHome></BodyHome>
             <Footer></Footer>
         </>

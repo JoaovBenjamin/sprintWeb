@@ -2,7 +2,7 @@
 import { Divimg,TituloImagem,Section,SectionImagem } from "../Estilos/Estilos"
 
 //Criando a function que vai armazenar as minhas estilizaçõees
-function Header(){
+function HeaderHome(){
 
     return(
         <>
@@ -18,4 +18,4 @@ function Header(){
 }
 
 //Exportando minha function para ser utilizada na "PaginaInicial.jsx"
-export default Header
+export default HeaderHome
