@@ -1,4 +1,4 @@
-//Importando meus estilos para montar o 
+//Importando meus estilos para montar o meu componente
 import { Rodape, LinkC } from "../Estilos/Estilos"
 
 //Criando a Function que vai armazenar os meus estilos e criar meu componente
@@ -6,7 +6,7 @@ function Footer(){
     return(
         <>
             <Rodape>
-                <LinkC target="">Não tem cadastro ?</LinkC>
+                <LinkC href = "/cadastrar">Não tem cadastro ?</LinkC>
                 <p>Direitos reservado</p>
             </Rodape>
         </>

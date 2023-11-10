@@ -1,6 +1,6 @@
 import Formulario from "../Componentes/Formulario"
 
-function ConfirmacaoIdentidade(){
+function IniciandoAtendimento(){
     return(
         <>
             <Formulario></Formulario>
@@ -8,4 +8,4 @@ function ConfirmacaoIdentidade(){
     )
 }
 
-export default ConfirmacaoIdentidade
+export default IniciandoAtendimento

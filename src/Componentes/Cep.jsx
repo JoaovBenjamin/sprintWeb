@@ -3,7 +3,7 @@ import { useState } from "react";
 // Importando o axios para consumir a API
 import axios from 'axios';
 //importando os esilos
-import { Body } from "../Estilos/Estilos";
+import { Section } from "../Estilos/Estilos";
 
 function Cep() {
 
@@ -49,9 +49,7 @@ function Cep() {
     }
     return(
         <>
-            <Body>
-                
-            </Body>
+            <Section></Section>
         </>
     )
 }
